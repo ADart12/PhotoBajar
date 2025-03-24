@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Getty Images Clone</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Photo.<span>Bazaar</span></div>
+      <div class="menu" onclick="openmenu()" ><i class="fa-solid fa-bars"></i></div>
+      <ul class="nav_links">
+        <li class="cross" onclick="closemenu()" ><i class="fa-solid fa-xmark"></i></li>
+        <li class="dropdown">Creative <i class="fa-solid fa-angle-down"></i>
+          <ul class="dropdown-content">
+            <li>Photos</li>
+            <li>Illustrations</li>
+            <li>Vectors</li>
+          </ul>
+        </li>
+        <li class="dropdown">Editorial <i class="fa-solid fa-angle-down"></i>
+          <ul class="dropdown-content">
+            <li>News</li>
+            <li>Sports</li>
+            <li>Entertainment</li>
+          </ul>
+        </li>
+        <li class="dropdown">Video <i class="fa-solid fa-angle-down"></i>
+          <ul class="dropdown-content">
+            <li>Clips</li>
+            <li>Footage</li>
+            <li>Templates</li>
+          </ul>
+        </li>
+        <li class="dropdown">Collections <i class="fa-solid fa-angle-down"></i>
+          <ul class="dropdown-content">
+            <li>Curated Sets</li>
+            <li>Trending</li>
+            <li>Editors' Picks</li>
+          </ul>
+        </li>
+        <li class="dropdown">AI Generator <i class="fa-solid fa-angle-down"></i>
+          <ul class="dropdown-content">
+            <li>Generate Images</li>
+            <li>Customize Designs</li>
+            <li>Explore Tools</li>
+          </ul>
+        </li>
+        <li class="dropdown">Trends & Insights <i class="fa-solid fa-angle-down"></i>
+          <ul class="dropdown-content">
+            <li>Visual Trends</li>
+            <li>Market Insights</li>
+            <li>Reports</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="nav-actions">
+        <a href="form.html"><button>Sign In</button></a>
+        <button onclick="cart_one()">Cart</button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Move the world</h1>
+    <div class="search-bar">
+      <input type="text" placeholder="Search the world's best photos and video clips" />
+      <button>Search</button>
+    </div>
+  </section>
+
+  <div class="main_content">
+    <i onclick="showmaincontent()" class="fa-solid fa-caret-down"></i>
+    <ul>
+      <li class="closemain" onclick="closemain()"><i class="fa-solid fa-xmark"></i></li>
+      <li>Creative</li>
+      <li>Editorial</li>
+      <li>Video</li>
+      <li>Music</li>
+      <li>Collections</li>
+    </ul>
+  </div>
+  <div class="masonry">
+    <div class="image-container">
+      <img src="img/man.jpg" alt="Image 1" />
+<button onclick="showCustomAlert()" class="save-btn">Buy</button>
+
+    </div>
+    <div class="image-container">
+      <img src="img/2.jpg" alt="Image 2" />
+      <button onclick="showCustomAlert()"  class="save-btn">Buy</button>
+    </div>
+    <div class="image-container">
+      <img src="img/3.jpg" alt="Image 3" />
+      <button onclick="showCustomAlert()"  class="save-btn">Buy</button>
+    </div>
+    <div class="image-container">
+      <img src="img/4.jpg" alt="Image 4" />
+      <button onclick="showCustomAlert()"  class="save-btn">Buy</button>
+    </div>
+    <div class="image-container">
+      <img src="img/5.jpg" alt="Image 5" />
+      <button onclick="showCustomAlert()"  class="save-btn">Buy</button>
+    </div>
+    <div class="image-container">
+      <img src="img/6.jpg" alt="Image 6" />
+      <button onclick="showCustomAlert()"  class="save-btn">Buy</button>
+    </div>
+    <div class="image-container">
+      <img src="img/7.jpg" alt="Image 7" />
+      <button onclick="showCustomAlert()"  class="save-btn">Buy</button>
+    </div>
+    <div class="image-container">
+      <img src="img/8.jpg" alt="Image 8" />
+      <button onclick="showCustomAlert()"   class="save-btn">Buy</button>
+    </div>
+    <div class="image-container">
+      <img src="img/9.jpg" alt="Image 9" />
+      <button onclick="showCustomAlert()"  class="save-btn">Buy</button>
+    </div>
+    <div class="image-container">
+      <img src="img/10.jpg" alt="Image 10" />
+      <button onclick="showCustomAlert()"  class="save-btn">Buy</button>
+    </div>
+    <div class="image-container">
+      <img src="img/11.jpg" alt="Image 11" />
+      <button onclick="showCustomAlert()"  class="save-btn">Buy</button>
+    </div>
+    <div class="image-container">
+      <img src="img/12.jpg" alt="Image 12" />
+      <button onclick="showCustomAlert()"  class="save-btn">Buy</button>
+    </div>
+    <div class="image-container">
+      <img src="img/132.jpg" alt="Image 13" />
+      <button onclick="showCustomAlert()"  class="save-btn">Buy</button>
+    </div>
+    <div class="image-container">
+      <img src="img/14.jpg" alt="Image 14" />
+      <button onclick="showCustomAlert()"  class="save-btn">Buy</button>
+    </div>
+    <div class="image-container">
+      <img src="img/15.jpg" alt="Image 15" />
+      <button onclick="showCustomAlert()"  class="save-btn">Buy</button>
+    </div>
+    <div class="image-container">
+      <img src="img/16.jpg" alt="Image 16" />
+      <button onclick="showCustomAlert()"  class="save-btn">Buy</button>
+    </div>
+    <div class="image-container">
+      <img src="img/17.jpg" alt="Image 17" />
+      <button onclick="showCustomAlert()"  class="save-btn">Buy</button>
+    </div>
+    <div class="image-container">
+      <img src="img/18.jpg" alt="Image 18" />
+      <button onclick="showCustomAlert()"  class="save-btn">Buy</button>
+    </div>
+    <div class="image-container">
+      <img src="img/19.jpg" alt="Image 19" />
+      <button onclick="showCustomAlert()" class="save-btn">Buy</button>
+    </div>
+    <div class="image-container">
+      <img src="img/20.jpg" alt="Image 20" />
+      <button onclick="showCustomAlert()"  class="save-btn">Buy</button>
+    </div>
+    <div class="image-container">
+      <img src="img/21.jpg" alt="Image 21" />
+      <button onclick="showCustomAlert()"  class="save-btn">Buy</button>
+    </div>
+    <div class="image-container">
+      <img src="img/22.jpg" alt="Image 22" />
+      <button onclick="showCustomAlert()"  class="save-btn">Buy</button>
+    </div>
+    <div class="image-container">
+      <img src="img/23.jpg" alt="Image 23" />
+      <button onclick="showCustomAlert()"  class="save-btn">Buy</button>
+    </div>
+    <div class="image-container">
+      <img src="img/24.jpg" alt="Image 24" />
+      <button onclick="showCustomAlert()"  class="save-btn">Buy</button>
+    </div>
+    <div class="image-container">
+      <img src="img/25.jpg" alt="Image 25" />
+      <button onclick="showCustomAlert()"  class="save-btn">Buy</button>
+    </div>
+    <div class="image-container">
+      <img src="img/26.jpg" alt="Image 26" />
+      <button onclick="showCustomAlert()"  class="save-btn">Buy</button>
+    </div>
+    <div class="image-container">
+      <img src="img/27.jpg" alt="Image 27" />
+      <button onclick="showCustomAlert()"  class="save-btn">Buy</button>
+    </div>
+    <div class="image-container">
+      <img src="img/28.jpg" alt="Image 28" />
+      <button onclick="showCustomAlert()"  class="save-btn">Buy</button>
+    </div>
+    <div class="image-container">
+      <img src="img/29.jpg" alt="Image 29" />
+      <button onclick="showCustomAlert()"  class="save-btn">Buy</button>
+    </div>
+    <div class="image-container">
+      <img src="img/30.jpg" alt="Image 30" />
+      <button onclick="showCustomAlert()"  class="save-btn">Buy</button>
+    </div>
+    <div class="image-container">
+      <img src="img/cat.jpg" alt="Image 30" />
+      <button onclick="showCustomAlert()"  class="save-btn">Buy</button>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>About Us</h4>
+        <p>Explore millions of royalty-free images, illustrations, and videos for your projects. </p>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Creative</a></li>
+          <li><a href="#">Editorial</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">AI Generator</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <p>Email: bhattaaditya976@gmail.com</p>
+        <p>Phone: +9779746507561</p>
+        <p>Address: Adart, Mahendranagar, Nepal</p>
+      </div>
+  
+      <div class="footer-section social">
+        <h4>Follow Us</h4>
+        <a href="https://www.facebook.com/aaditya.bhatt.1650"><i class="fab fa-facebook"></i></a>
+        <a href="https://x.com/Aaditya_Bhatt51"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/aaditya.bhatt.1650/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/adart976/"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 GET.images. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+<script src="script.js"></script>
+</html>

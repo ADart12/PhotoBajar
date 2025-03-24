@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign Up form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+  .container {
+     height: 100vh;
+     width: 100vw;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-image: url('img/image.png');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     position: relative;
+}      
+
+/* Add Blur Effect with Translucency */
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px); /* Adjust the blur value */
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent white overlay */
+}
+
+        .form {
+            padding: 5vh 4vw;
+            width: 25%;
+            height: 85%;
+            border-radius: 20px;
+            background-color:#EFDFBB;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        .text h1 {
+            text-align: center;
+            font-size: 4vh;
+            color: #722F38;
+        }
+
+        .btns {
+            padding: 2vh 0;
+            display: flex;
+            justify-content: left;
+            gap: 2vh;
+        }
+
+        .register {
+            background-color: #722F38;
+            width: 15vh;
+            height: 5vh;
+            border-radius: 10px;
+            color: #EFDFBB;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.9vh;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .login {
+            background-color: #722F38;
+            width: 15vh;
+            height: 5vh;
+            border-radius: 10px;
+            color: #EFDFBB;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.9vh;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .register:hover {
+            transform: scale(0.95);
+            color: #EFDFBB;
+
+            background-color: #7a444b;
+            cursor: pointer;
+        }
+
+        .login:hover {
+            transform: scale(0.95);
+            color:#EFDFBB;
+            background-color:#834049;
+        }
+
+        .name input {
+            width: 85%;
+            height: 5vh;
+            border-radius: 10px;
+            padding: 0 3vh;
+            font-size: 2.5vh;
+            color: #080b38;
+            border: none;
+            text-transform: capitalize;
+        }
+
+        .email input {
+            margin: 2vh 0;
+            width: 85%;
+            height: 5vh;
+            border-radius: 10px;
+            padding: 0 3vh;
+            font-size: 2.5vh;
+            color: #080b38;
+            border: none;
+            text-transform: lowercase;
+        }
+
+        .num {
+            display: flex;
+            justify-content: left;
+            width: 100%;
+            gap: 2vh;
+            height: 5vh;
+        }
+
+        .select #code {
+            width: 100%;
+            height: 5vh;
+            border: none;
+            border-radius: 10px;
+            color: #080b38;
+        }
+
+        .number input {
+            width: 77%;
+            height: 5vh;
+            border-radius: 10px;
+            padding: 0 3vh;
+            font-size: 2.5vh;
+            color: #080b38;
+            border: none;
+            text-transform: capitalize;
+        }
+
+        .adress {
+            margin: 2vh 0;
+            display: flex;
+            justify-content: left;
+            width: 89%;
+            height: 5vh;
+            gap: 5vh;
+        }
+
+        .adress input {
+            width: 89%;
+            height: 5vh;
+            border-radius: 10px;
+            padding: 0 3vh;
+            font-size: 2.5vh;
+            color: #080b38;
+            border: none;
+            text-transform: capitalize;
+        }
+
+
+        .code-container {
+            display: flex;
+            align-items: center;
+            border: none;
+            border-radius: 8px;
+            width: 150px;
+            font-size: 18px;
+            background-color: #fff;
+            height: 5vh;
+            color: #080b38;
+            padding: 0 1vh;
+        }
+
+        #codeDisplay {
+            flex-grow: 1;
+            text-align: center;
+            letter-spacing: 2px;
+            font-weight: bold;
+            color: #080b38;
+        }
+
+        .refresh-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            margin-left: 5px;
+        }
+
+        .refresh-button:hover {
+            color: #007BFF;
+        }
+
+        .capcha {
+            margin: 2vh 0;
+            display: flex;
+            gap: 2vh;
+        }
+
+        .capcha .inputC input {
+            height: 5vh;
+            width: 80%;
+            border: none;
+            border-radius: 10px;
+            padding: 0 2vh;
+            font-size: 2.5vh;
+            color: #080b38;
+        }
+
+        .checkbox {
+            display: flex;
+        }
+
+        .checkbox p {
+            color: white;
+        }
+
+        #customCheck {
+            margin: 0 2vh;
+        }
+
+        .submit {
+            text-align: center;
+        }
+
+        .submit button {
+            background-color:#722F38;
+            width: 15vh;
+            height: 5vh;
+            border-radius: 10px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5vh;
+            border: none;
+            margin: 2vh 0;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .submit button:hover {
+            transform: scale(0.95);
+            color: rgb(210, 210, 210);
+            background-color:#793740;
+            cursor: pointer;
+        }
+
+        .checkbox p {
+            color:#824148;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 2.5vh;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .checkbox p a:hover {
+            color:#6e333a;
+        }
+
+        @media(max-width: 768px) {
+            .form {
+                width: 85%;
+                height: 80vh;
+            }
+        }
+
+        ;
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="text">
+                <h1>Get access to our world.</h1>
+            </div>
+            <div class="btns">
+                <div class="register">Register</div>
+                <div class="login">Log In</div>
+            </div>
+            <div class="name">
+                <input type="text" placeholder=" Enter your Name *" required>
+            </div>
+            <div class="email">
+                <input type="text" placeholder="xyz@gmail.com" required>
+            </div>
+            <!-- number -->
+            <div class="num">
+                <div class="select">
+                    <select name="country_code" id="code" required>
+                        <option value="+977">+977 (Nepal)</option>
+                        <option value="+91">+91 (India)</option>
+                        <option value="+86">+86 (China)</option>
+                        <option value="+880">+880 (Bangladesh)</option>
+                        <option value="+975">+975 (Bhutan)</option>
+                        <option value="+92">+92 (Pakistan)</option>
+                    </select>
+                </div>
+                <div class="number"><input type="number" placeholder="Enter your number *" required></div>
+            </div>
+            <!-- adress -->
+            <div class="adress">
+                <div class="state">
+                    <input type="text" placeholder="state" required>
+                </div>
+                <div class="district">
+                    <input type="text" placeholder="District" required>
+                </div>
+            </div>
+
+            <!-- capcha -->
+            <div class="capcha">
+                <div class="code-container">
+                    <div id="codeDisplay"></div>
+                    <button class="refresh-button" onclick="generateCode()">⟳</button>
+                </div>
+                <div class="inputC">
+                    <input type="text" placeholder="Enter Capcha">
+                </div>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="customCheck" name="customCheck">
+                <p>I agree to let you use my personal information for this application.
+                </p>
+            </div>
+            <div class="submit">
+                <button onclick="submitbtn()" type="submit" class="btn btn-primary">Submit</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+</body>
+<script>
+    function generateCode() {
+        const characters = 'abcdefghijklmnopquestuvwxyz0123456789';  // Hex characters
+        let code = '';
+        for (let i = 0; i < 6; i++) {
+            code += characters.charAt(Math.floor(Math.random() * characters.length));
+        }
+        document.getElementById('codeDisplay').innerText = code;
+    }
+
+    // Generate code on initial load
+    window.onload = generateCode;
+</script>
+<script src="script.js"></script>
+</html>
