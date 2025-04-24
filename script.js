@@ -43,5 +43,5 @@ function cart_one() {
 }
 
 function submitbtn(){
-  alert(" Can't Submit the form.");
+  alert(" Can't submit the form.");
 }
