@@ -35,13 +35,13 @@ function closemain() {
 }  
 
 function showCustomAlert() {
-  alert("Vai tu Garib he mat kar🥹.");
+  alert("This feature is not available.");
 }
 
 function cart_one() {
-  alert("Rehene de kuch nai hee Vai..✌️")
+  alert("The cart is not available")
 }
 
 function submitbtn(){
-  alert("Nahiii Hunga 🫤");
+  alert(" Can't Submit the form.");
 }
